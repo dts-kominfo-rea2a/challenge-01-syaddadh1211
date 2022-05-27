@@ -6,7 +6,7 @@ const firstUser = {
   gender: "Female",
   age: 17,
   email: "monica@dingdong.com",
-  favoriteColor: [new Set(["Yellow", "Pink", "White", "Purple"])],
+  favoriteColor: Array.from(new Set(["Yellow", "Pink", "White", "Purple"])),
   isHavePet: true,
   education: [
     {
@@ -25,7 +25,7 @@ const firstUser = {
       graduate: null,
     },
   ],
-  favoriteRestaurant: [
+  favoriteRestaurant: Array.from(
     new Set([
       "Bento",
       "Sushi",
@@ -38,15 +38,15 @@ const firstUser = {
       "Tteok",
       "Sushi",
       "Sushi",
-    ]),
-  ],
+    ])
+  ),
 };
 const secondUser = {
   name: "Wendy",
   gender: "Male",
   age: 23,
   email: "wendy@dingdong.com",
-  favoriteColor: [new Set(["Blue", "Black", "Grey"])],
+  favoriteColor: Array.from(new Set(["Blue", "Black", "Grey"])),
   isHavePet: false,
   education: [
     {
@@ -70,7 +70,7 @@ const secondUser = {
       graduate: null,
     },
   ],
-  favoriteRestaurant: [
+  favoriteRestaurant: Array.from(
     new Set([
       "Tempura",
       "Bento",
@@ -81,8 +81,8 @@ const secondUser = {
       "Geprek",
       "Pancake",
       "Eggy",
-    ]),
-  ],
+    ])
+  ),
 };
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
